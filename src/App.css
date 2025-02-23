@@ -1,0 +1,168 @@
+/* App.css */
+
+/* Tornando o GIF ocupar toda a tela */
+.background-gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../public/video/ap-malphite-dance.gif"); /* Caminho original */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+/* Estilo para a página inicial (HomePage) */
+.home-page {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  z-index: 0;
+}
+
+.buttons-home {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.buttons-home button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Estilo para as páginas de Cadastro e Perguntas Frequentes */
+.cadastro-page,
+.perguntas-frequentes-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Centralizando e estilizando o formulário de cadastro */
+.cadastro-page form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Espaçamento entre os campos */
+  width: 100%;
+  max-width: 400px; /* Tamanho do formulário */
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-page .form-group label {
+  font-size: 14px;
+  color: #333;
+}
+
+.cadastro-page .form-group input,
+.cadastro-page .form-group select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.cadastro-page h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cadastro-page button {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cadastro-page button:hover {
+  background-color: #0056b3;
+}
+
+.voltar-home {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Estilo para as páginas de Perguntas Frequentes */
+.perguntas-frequentes-page h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.perguntas-frequentes-page h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.perguntas-frequentes-page p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.perguntas-frequentes-page .voltar-home {
+  margin-top: 20px;
+}
+
+/* Estilo para a página Quem Somos */
+.quem-somos-page {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Contêiner para os vídeos lado a lado */
+.video-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Estilo individual para cada item de vídeo */
+.video-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%; /* Largura fixa para cada vídeo */
+}
+
+/* Títulos dos vídeos */
+.video-item h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para os vídeos */
+video {
+  width: 100%;
+  max-width: 500px; /* Largura máxima para os vídeos */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
